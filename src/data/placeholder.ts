@@ -14,7 +14,7 @@ const commonProfile = {
   telegram: "https://t.me/mykola_kosmachevskyi",
   github: "https://github.com/Nikruto-1",
   linkedin: "https://www.linkedin.com/in/nickolas-kosmachevsky-665a1840a/",
-  resumeUrl: "/resume/Mykola_Kosmachevskyi_CV.pdf",
+  resumeUrl: "https://nikruto-1.github.io/portfolio/resume/Mykola_Kosmachevskyi_CV.pdf",
 };
 
 const backendStack = [

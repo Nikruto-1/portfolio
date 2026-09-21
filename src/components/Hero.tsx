@@ -29,7 +29,8 @@ export default function Hero({ profile, labels }: HeroProps) {
         {profile.resumeUrl && (
           <a
             href={profile.resumeUrl}
-            download
+            target="_blank"
+            rel="noreferrer"
             className="flex items-center gap-2 rounded-none border border-line px-6 py-3 font-mono text-sm text-ink transition-colors hover:border-accent hover:text-accent"
           >
             <span aria-hidden="true">↓</span> {labels.resume}

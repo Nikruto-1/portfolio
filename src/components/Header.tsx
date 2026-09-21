@@ -68,7 +68,8 @@ export default function Header({
           {profile.resumeUrl && (
             <a
               href={profile.resumeUrl}
-              download
+              target="_blank"
+              rel="noreferrer"
               onClick={() => setIsOpen(false)}
               className="self-start border border-ink px-3 py-1.5 font-mono text-sm text-ink transition-colors hover:border-accent hover:text-accent"
             >
