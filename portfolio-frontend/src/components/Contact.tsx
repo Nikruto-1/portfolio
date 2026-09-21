@@ -21,6 +21,9 @@ interface ContactProps {
 type Status = "idle" | "sending" | "sent" | "error";
 
 export default function Contact({ profile, title, labels }: ContactProps) {
+  const privacyPolicyPath = import.meta.env.PROD
+    ? `${import.meta.env.BASE_URL}privacy-policy.html`
+    : "/privacy-policy.html";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -110,7 +113,7 @@ export default function Contact({ profile, title, labels }: ContactProps) {
             <span>
               {labels.consent} {labels.privacyPrefix}{" "}
               <a
-                href="privacy-policy.html"
+                href={privacyPolicyPath}
                 target="_blank"
                 rel="noreferrer"
                 className="text-ink underline decoration-line underline-offset-4 hover:text-accent hover:decoration-accent"
