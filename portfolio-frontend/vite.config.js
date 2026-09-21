@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
+    base: "./",
     plugins: [react()],
     resolve: {
         alias: {
@@ -22,9 +23,8 @@ export default defineConfig({
         },
     },
     build: {
-        // Emit straight into the ASP.NET Core wwwroot for single-deploy setups.
-        // Comment this out if you deploy frontend and backend separately.
-        outDir: "../backend/wwwroot",
+        // Emit to docs so GitHub Pages can serve it from the master branch.
+        outDir: "../docs",
         emptyOutDir: true,
     },
 });
