@@ -96,7 +96,7 @@ export const localizedContent: Record<LanguageCode, LocalizedPortfolio> = {
       { category: "Frontend", items: frontendStack },
       { category: "Tools", items: toolsStack },
       { category: "Security & compliance", items: complianceStack },
-      { category: "Languages", items: ["Ukrainian — native", "English — CEFR C1", "Swedish — beginner"] },
+      { category: "Languages", items: ["Ukrainian — native", "Russian — native", "English — CEFR C1", "Swedish — beginner"] },
       { category: "Soft skills", items: ["Problem-solving", "Комунікація", "Адаптивність", "Командна робота", "Тайм-менеджмент", "Увага до деталей"] },
     ],
     projects: [
@@ -164,7 +164,7 @@ export const localizedContent: Record<LanguageCode, LocalizedPortfolio> = {
       { category: "Frontend", items: frontendStack },
       { category: "Tools", items: toolsStack },
       { category: "Security & compliance", items: complianceStack },
-      { category: "Languages", items: ["Ukrainian — native", "English — CEFR C1", "Swedish — beginner"] },
+      { category: "Languages", items: ["Ukrainian — native", "Russian — native", "English — CEFR C1", "Swedish — beginner"] },
       { category: "Soft skills", items: ["Problem-solving", "Communication", "Adaptability", "Teamwork", "Time management", "Attention to detail"] },
     ],
     projects: [
@@ -232,7 +232,7 @@ export const localizedContent: Record<LanguageCode, LocalizedPortfolio> = {
       { category: "Frontend", items: frontendStack },
       { category: "Verktyg", items: toolsStack },
       { category: "Säkerhet & efterlevnad", items: complianceStack },
-      { category: "Språk", items: ["Ukrainska — modersmål", "Engelska — CEFR C1", "Svenska — nybörjare"] },
+      { category: "Språk", items: ["Ukrainska — modersmål", "Ryska — modersmål", "Engelska — CEFR C1", "Svenska — nybörjare"] },
       { category: "Mjuka färdigheter", items: ["Problemlösning", "Kommunikation", "Anpassningsförmåga", "Teamarbete", "Tidshantering", "Noggrannhet"] },
     ],
     projects: [
@@ -288,7 +288,7 @@ export const localizedContent: Record<LanguageCode, LocalizedPortfolio> = {
   },
 };
 
-export const profile = localizedContent.uk.profile;
-export const skillGroups = localizedContent.uk.skillGroups;
-export const projects = localizedContent.uk.projects;
-export const experience = localizedContent.uk.experience;
+export const profile = localizedContent.en.profile;
+export const skillGroups = localizedContent.en.skillGroups;
+export const projects = localizedContent.en.projects;
+export const experience = localizedContent.en.experience;

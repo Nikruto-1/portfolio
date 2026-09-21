@@ -136,7 +136,7 @@ export const UI_COPY = {
 }>;
 
 export default function App() {
-  const [language, setLanguage] = useState<LanguageCode>("uk");
+  const [language, setLanguage] = useState<LanguageCode>("en");
   const [profile, setProfile] = useState<Profile>(fallbackProfile);
   const [skillGroups, setSkillGroups] = useState<SkillGroup[]>(fallbackSkillGroups);
   const [projects, setProjects] = useState<Project[]>(fallbackProjects);
