@@ -110,7 +110,7 @@ export default function Contact({ profile, title, labels }: ContactProps) {
             <span>
               {labels.consent} {labels.privacyPrefix}{" "}
               <a
-                href="/privacy-policy.html"
+                href="privacy-policy.html"
                 target="_blank"
                 rel="noreferrer"
                 className="text-ink underline decoration-line underline-offset-4 hover:text-accent hover:decoration-accent"

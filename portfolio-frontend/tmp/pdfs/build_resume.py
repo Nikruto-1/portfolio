@@ -206,7 +206,7 @@ def build():
     story += [
         p("<b>Backend:</b> .NET 6-10, .NET 10 LTS, .NET 9, .NET 8 LTS, .NET 7, .NET 6 LTS, C#, ASP.NET Core, ASP.NET MVC, Web API, RESTful API design, EF Core 6-10, LINQ, dependency injection, clean architecture basics", base),
         p("<b>Databases:</b> PostgreSQL, Microsoft SQL Server, SQL, query optimization, migrations, indexes, relational database design", base),
-        p("<b>Frontend:</b> React, TypeScript, JavaScript, Vite, HTML5, CSS3, Tailwind CSS, Bootstrap, responsive layout, API integration", base),
+        p("<b>Frontend:</b> React, TypeScript, JavaScript, Vite, HTML5, CSS3, Tailwind CSS, responsive layout, API integration", base),
         p("<b>Security & compliance:</b> JWT auth, refresh tokens, HTTP-only cookies, role-based access control, GDPR basics, personal data handling, privacy-aware API design, data validation", base),
         p("<b>Tools:</b> Git, GitHub, Visual Studio, VS Code, Postman, Swagger/OpenAPI, Docker basics, npm, Chrome DevTools", base),
     ]
@@ -215,7 +215,7 @@ def build():
     story.append(
         job(
             ".NET Backend Developer - Commercial Project",
-            "AutoAlexDE.Api",
+            "AutoAlexDE",
             "2026 - Present",
             [
                 "Developed and maintained a production-ready ASP.NET Core backend for an automotive business with a car catalog, customer requests, users, and admin operations.",
@@ -235,7 +235,7 @@ def build():
                 "Worked on commercial web applications for small and medium-sized businesses, building backend solutions with .NET 6-10 / ASP.NET Core and database integrations.",
                 "Designed REST APIs, DTO models, service-layer logic, validation workflows, Swagger documentation, and maintainable business logic.",
                 "Optimized SQL queries and worked with Entity Framework Core, SQL Server, and PostgreSQL to improve data access reliability and performance.",
-                "Implemented authentication, GDPR-aware personal data handling, and responsive UI parts with Bootstrap/React.",
+                "Implemented authentication, GDPR-aware personal data handling, and React/TypeScript UI integrations.",
                 "Participated in code reviews, debugging, refactoring legacy modules, and migrating systems toward modern .NET architecture.",
             ],
         )
@@ -257,7 +257,7 @@ def build():
     story += section_block("COMMERCIAL & PERSONAL PROJECTS")
     story.append(
         project(
-            "AutoAlexDE.Api",
+            "AutoAlexDE",
             "Commercial backend API",
             "Backend API for an automotive business with authentication, car catalog management, customer requests, admin operations, image handling, multilingual content, and GDPR-aware personal data flows.",
             "ASP.NET Core, C#, PostgreSQL, EF Core, JWT, Google Auth, Cloudinary, MailKit, GDPR",
@@ -267,8 +267,8 @@ def build():
         project(
             "Task Management Web App",
             "Personal full-stack project",
-            "Task management application where users can create, update, and delete tasks with a responsive Bootstrap interface and PostgreSQL-backed data storage.",
-            "ASP.NET Core, PostgreSQL, Bootstrap, Git",
+            "Task management application where users can create, update, and delete tasks with a React/TypeScript interface and PostgreSQL-backed data storage.",
+            "ASP.NET Core, PostgreSQL, React, TypeScript, Git",
         )
     )
 
@@ -284,7 +284,7 @@ def build():
 
     story += section_block("LANGUAGES")
     story += [
-        p("Ukrainian - native | English - CEFR B1-B2 | Swedish - beginner", base),
+        p("Ukrainian - native | English - CEFR C1 | Swedish - beginner", base),
     ]
 
     story += section_block("SOFT SKILLS")
