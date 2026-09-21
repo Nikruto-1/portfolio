@@ -1,0 +1,263 @@
+const commonProfile = {
+  name: "Mykola Kosmachevskyi",
+  email: "kkosmacevskij@gmail.com",
+  phone: "+380 63 737 6245",
+  telegram: "https://t.me/mykola_kosmachevskyi",
+  github: "https://github.com/Nikruto-1",
+  linkedin: "https://www.linkedin.com/in/nickolas-kosmachevsky-665a1840a/",
+  resumeUrl: "/resume/Mykola_Kosmachevskyi_CV.pdf"
+};
+const backendStack = [
+  ".NET 6-10",
+  ".NET 10 LTS",
+  ".NET 9",
+  ".NET 8 LTS",
+  ".NET 7",
+  ".NET 6 LTS",
+  "C#",
+  "ASP.NET Core",
+  "ASP.NET MVC",
+  "Web API",
+  "RESTful API",
+  "Entity Framework Core",
+  "EF Core 6-10",
+  "LINQ",
+  "JWT auth",
+  "Dependency Injection",
+  "Clean Architecture basics"
+];
+const databaseStack = [
+  "PostgreSQL",
+  "Microsoft SQL Server",
+  "SQL",
+  "Query optimization",
+  "Migrations",
+  "Indexes",
+  "Relational database design"
+];
+const frontendStack = [
+  "React",
+  "TypeScript",
+  "JavaScript",
+  "Vite",
+  "HTML5",
+  "CSS3",
+  "Tailwind CSS",
+  "Bootstrap",
+  "Responsive layout",
+  "API integration"
+];
+const toolsStack = [
+  "Git",
+  "GitHub",
+  "Visual Studio",
+  "VS Code",
+  "Postman",
+  "Swagger / OpenAPI",
+  "Docker basics",
+  "npm",
+  "Vite",
+  "Chrome DevTools"
+];
+const complianceStack = [
+  "GDPR basics",
+  "Personal data handling",
+  "Privacy-aware API design",
+  "Role-based access control",
+  "Data validation",
+  "Secure configuration basics"
+];
+export const localizedContent = {
+  uk: {
+    profile: {
+      ...commonProfile,
+      role: ".NET Developer",
+      location: "Sweden",
+      tagline: "Створюю швидкі бекенди на .NET та зручні інтерфейси на React.",
+      bio: ".NET Developer з 3+ роками досвіду розробки комерційних вебзастосунків, backend API та інтеграцій. Працюю з ASP.NET Core, PostgreSQL, JWT authentication, email flows, Cloudinary та GDPR-aware обробкою персональних даних. Люблю нові технології, швидко адаптуюсь і фокусуюсь на чистому, підтримуваному коді та рішеннях, які реально закривають бізнес-потреби."
+    },
+    skillGroups: [
+      { category: "Backend", items: backendStack },
+      { category: "Databases", items: databaseStack },
+      { category: "Frontend", items: frontendStack },
+      { category: "Tools", items: toolsStack },
+      { category: "Security & compliance", items: complianceStack },
+      { category: "Languages", items: ["Ukrainian — native", "English — CEFR B1-B2", "Swedish — beginner"] },
+      { category: "Soft skills", items: ["Problem-solving", "Комунікація", "Адаптивність", "Командна робота", "Тайм-менеджмент", "Увага до деталей"] }
+    ],
+    projects: [
+      {
+        id: "autoalexde-api",
+        title: "AutoAlexDE.Api",
+        description: "Комерційний backend API для автомобільного бізнесу з каталогом авто, заявками клієнтів, адмінським керуванням контентом та авторизацією. Реалізовував REST endpoints, JWT + refresh token authentication через HTTP-only cookies, Google auth, email confirmation, password reset, role-based access для адмін-функцій, Cloudinary upload/delete для фото авто, PostgreSQL + EF Core migrations, мультимовні описи авто та GDPR-aware сценарії на кшталт видалення акаунта й маскування VIN для анонімних користувачів.",
+        tech: ["ASP.NET Core", "C#", "PostgreSQL", "EF Core", "JWT", "Google Auth", "Cloudinary", "MailKit", "GDPR"]
+      },
+      {
+        id: "task-management-app",
+        title: "Task Management Web App",
+        description: "Full-stack застосунок для керування задачами: ASP.NET Core на бекенді, HTML/CSS + Bootstrap на фронтенді, PostgreSQL для зберігання даних. Користувачі можуть створювати, оновлювати та видаляти задачі.",
+        tech: ["ASP.NET Core", "PostgreSQL", "Bootstrap", "Git"]
+      }
+    ],
+    experience: [
+      {
+        id: "autoalexde-api-commercial",
+        title: ".NET Backend Developer — Commercial Project",
+        organization: "AutoAlexDE.Api",
+        period: "2026 — Теперішній час",
+        description: "Розробляв і підтримував production-ready backend для автомобільного бізнесу на ASP.NET Core. Побудував API для каталогу авто, клієнтських заявок, користувачів та адмінських операцій; налаштовував PostgreSQL через Entity Framework Core, міграції та доменні моделі для Cars, CarRequests, Users, EmailConfirmationTokens і PasswordResetTokens. Реалізував JWT authentication з refresh tokens у HTTP-only cookies, Google login, email confirmation, password reset, role-based authorization, CORS для production-доменів, Cloudinary інтеграцію для завантаження й видалення фото, мультимовні описи авто та GDPR-aware функції: видалення акаунта, обробку персональних даних і маскування VIN у публічних відповідях API."
+      },
+      {
+        id: "nordic-code-solutions",
+        title: ".NET Developer",
+        organization: "Nordic Code Solutions",
+        period: "Червень 2023 — Липень 2026",
+        description: "Працював над комерційними вебзастосунками для малого та середнього бізнесу, розробляючи backend-рішення на .NET 6-10 / ASP.NET Core та інтеграції з базами даних. Проєктував REST API, DTO-моделі та сервісний шар, оптимізував SQL-запити, працював з Entity Framework Core, SQL Server і PostgreSQL, впроваджував авторизацію, валідацію даних, Swagger-документацію та адаптивні UI-частини на Bootstrap/React. Брав участь у код-рев'ю, рефакторингу легасі-модулів, міграції на сучаснішу .NET-архітектуру та впровадженні GDPR-aware підходів до обробки персональних даних."
+      },
+      {
+        id: "cyber-operations",
+        title: "Cyber Police Experience",
+        organization: "Кіберполіція України",
+        period: "2022",
+        description: "Працював у напрямі протидії кіберзлочинності на початку війни проти агресора росії. Брав участь в аналізі цифрових даних, OSINT-матеріалів, логів та технічних індикаторів, допомагав із виявленням злочинної активності, підтримкою авторизованих задач з перехоплення та аналізу даних, а також документуванням цифрових слідів для протидії злочинцям."
+      },
+      {
+        id: "education",
+        title: "B.S. Computer Science",
+        organization: "Odesa National Polytechnic University, Odesa, Ukraine",
+        period: "2022 — 2026",
+        description: "Завершив навчання за напрямом Computer Science. Основний фокус: Software Engineering, Calculus & Geometry, Algorithms & Data Structures, Architectural Patterns, Databases, Web Development та DevOps."
+      }
+    ]
+  },
+  en: {
+    profile: {
+      ...commonProfile,
+      role: ".NET Developer",
+      location: "Sweden",
+      tagline: "I build fast .NET backends and clean React interfaces.",
+      bio: ".NET Developer with 3+ years of experience building commercial web applications, backend APIs, and integrations. I work with ASP.NET Core, PostgreSQL, JWT authentication, email flows, Cloudinary, and GDPR-aware personal data handling. I learn new technologies quickly and focus on clean, maintainable code that solves real business needs."
+    },
+    skillGroups: [
+      { category: "Backend", items: backendStack },
+      { category: "Databases", items: databaseStack },
+      { category: "Frontend", items: frontendStack },
+      { category: "Tools", items: toolsStack },
+      { category: "Security & compliance", items: complianceStack },
+      { category: "Languages", items: ["Ukrainian — native", "English — CEFR B1-B2", "Swedish — beginner"] },
+      { category: "Soft skills", items: ["Problem-solving", "Communication", "Adaptability", "Teamwork", "Time management", "Attention to detail"] }
+    ],
+    projects: [
+      {
+        id: "autoalexde-api",
+        title: "AutoAlexDE.Api",
+        description: "A commercial backend API for an automotive business with a car catalog, customer requests, admin content management, and authentication. Worked on REST endpoints, JWT + refresh token authentication via HTTP-only cookies, Google auth, email confirmation, password reset, role-based access for admin operations, Cloudinary upload/delete for car images, PostgreSQL + EF Core migrations, multilingual car descriptions, and GDPR-aware flows such as account deletion and VIN masking for anonymous users.",
+        tech: ["ASP.NET Core", "C#", "PostgreSQL", "EF Core", "JWT", "Google Auth", "Cloudinary", "MailKit", "GDPR"]
+      },
+      {
+        id: "task-management-app",
+        title: "Task Management Web App",
+        description: "A full-stack task management app with ASP.NET Core on the backend, HTML/CSS + Bootstrap on the frontend, and PostgreSQL for data storage. Users can create, update, and delete tasks.",
+        tech: ["ASP.NET Core", "PostgreSQL", "Bootstrap", "Git"]
+      }
+    ],
+    experience: [
+      {
+        id: "autoalexde-api-commercial",
+        title: ".NET Backend Developer — Commercial Project",
+        organization: "AutoAlexDE.Api",
+        period: "2026 — Present",
+        description: "Developed and maintained a production-ready backend for an automotive business with ASP.NET Core. Built APIs for the car catalog, customer requests, users, and admin operations; configured PostgreSQL with Entity Framework Core, migrations, and domain models for Cars, CarRequests, Users, EmailConfirmationTokens, and PasswordResetTokens. Implemented JWT authentication with refresh tokens in HTTP-only cookies, Google login, email confirmation, password reset, role-based authorization, production CORS configuration, Cloudinary image upload/delete, multilingual car descriptions, and GDPR-aware features including account deletion, personal data handling, and VIN masking in public API responses."
+      },
+      {
+        id: "nordic-code-solutions",
+        title: ".NET Developer",
+        organization: "Nordic Code Solutions",
+        period: "June 2023 — July 2026",
+        description: "Worked on commercial web applications for small and medium-sized businesses, building backend solutions with .NET 6-10 / ASP.NET Core and database integrations. Designed REST APIs, DTO models, and service-layer logic; optimized SQL queries; worked with Entity Framework Core, SQL Server, and PostgreSQL; implemented authentication, data validation, Swagger documentation, and responsive UI parts with Bootstrap/React. Participated in code reviews, refactored legacy modules, helped migrate systems toward a more modern .NET architecture, and applied GDPR-aware approaches to personal data handling."
+      },
+      {
+        id: "cyber-operations",
+        title: "Cyber Police Experience",
+        organization: "Cyber Police of Ukraine",
+        period: "2022",
+        description: "Worked in cybercrime counteraction at the beginning of the war against the Russian aggressor. Took part in analyzing digital data, OSINT materials, logs, and technical indicators; helped identify criminal activity, supported authorized data interception and analysis tasks, and documented digital traces to assist investigations and counter cybercriminals."
+      },
+      {
+        id: "education",
+        title: "B.S. Computer Science",
+        organization: "Odesa National Polytechnic University, Odesa, Ukraine",
+        period: "2022 — 2026",
+        description: "Completed a Computer Science degree with a focus on Software Engineering, Calculus & Geometry, Algorithms & Data Structures, Architectural Patterns, Databases, Web Development, and DevOps."
+      }
+    ]
+  },
+  sv: {
+    profile: {
+      ...commonProfile,
+      role: ".NET-utvecklare",
+      location: "Sverige",
+      tagline: "Jag bygger snabba .NET-backends och tydliga React-gränssnitt.",
+      bio: ".NET-utvecklare med 3+ års erfarenhet av kommersiella webbapplikationer, backend-API:er och integrationer. Jag arbetar med ASP.NET Core, PostgreSQL, JWT-autentisering, e-postflöden, Cloudinary och GDPR-medveten hantering av personuppgifter. Jag lär mig ny teknik snabbt och fokuserar på ren, underhållbar kod som löser verkliga affärsbehov."
+    },
+    skillGroups: [
+      { category: "Backend", items: backendStack },
+      { category: "Databaser", items: databaseStack },
+      { category: "Frontend", items: frontendStack },
+      { category: "Verktyg", items: toolsStack },
+      { category: "Säkerhet & efterlevnad", items: complianceStack },
+      { category: "Språk", items: ["Ukrainska — modersmål", "Engelska — CEFR B1-B2", "Svenska — nybörjare"] },
+      { category: "Mjuka färdigheter", items: ["Problemlösning", "Kommunikation", "Anpassningsförmåga", "Teamarbete", "Tidshantering", "Noggrannhet"] }
+    ],
+    projects: [
+      {
+        id: "autoalexde-api",
+        title: "AutoAlexDE.Api",
+        description: "Ett kommersiellt backend-API för en bilverksamhet med bilkatalog, kundförfrågningar, administrativ innehållshantering och autentisering. Arbetade med REST-endpoints, JWT + refresh tokens via HTTP-only cookies, Google auth, e-postbekräftelse, lösenordsåterställning, rollbaserad åtkomst för adminfunktioner, Cloudinary upload/delete för bilbilder, PostgreSQL + EF Core migrations, flerspråkiga bilbeskrivningar och GDPR-medvetna flöden som kontoborttagning och maskering av VIN för anonyma användare.",
+        tech: ["ASP.NET Core", "C#", "PostgreSQL", "EF Core", "JWT", "Google Auth", "Cloudinary", "MailKit", "GDPR"]
+      },
+      {
+        id: "task-management-app",
+        title: "Task Management Web App",
+        description: "En fullstack-applikation för uppgiftshantering med ASP.NET Core i backend, HTML/CSS + Bootstrap i frontend och PostgreSQL för datalagring. Användare kan skapa, uppdatera och ta bort uppgifter.",
+        tech: ["ASP.NET Core", "PostgreSQL", "Bootstrap", "Git"]
+      }
+    ],
+    experience: [
+      {
+        id: "autoalexde-api-commercial",
+        title: ".NET Backend Developer — Kommersiellt projekt",
+        organization: "AutoAlexDE.Api",
+        period: "2026 — Nu",
+        description: "Utvecklade och underhöll en production-ready backend för en bilverksamhet med ASP.NET Core. Byggde API:er för bilkatalog, kundförfrågningar, användare och adminfunktioner; konfigurerade PostgreSQL med Entity Framework Core, migrations och domänmodeller för Cars, CarRequests, Users, EmailConfirmationTokens och PasswordResetTokens. Implementerade JWT-autentisering med refresh tokens i HTTP-only cookies, Google login, e-postbekräftelse, lösenordsåterställning, rollbaserad auktorisering, CORS för produktionsdomäner, Cloudinary-integrering för uppladdning/borttagning av bilder, flerspråkiga bilbeskrivningar och GDPR-medvetna funktioner som kontoborttagning, hantering av personuppgifter och maskering av VIN i publika API-svar."
+      },
+      {
+        id: "nordic-code-solutions",
+        title: ".NET-utvecklare",
+        organization: "Nordic Code Solutions",
+        period: "Juni 2023 — Juli 2026",
+        description: "Arbetade med kommersiella webbapplikationer för små och medelstora företag och byggde backend-lösningar med .NET 6-10 / ASP.NET Core samt databasintegrationer. Designade REST API:er, DTO-modeller och servicelager; optimerade SQL-frågor; arbetade med Entity Framework Core, SQL Server och PostgreSQL; implementerade autentisering, datavalidering, Swagger-dokumentation och responsiva UI-delar med Bootstrap/React. Deltog i kodgranskningar, refaktorering av legacy-moduler, migrering mot modernare .NET-arkitektur och GDPR-medveten hantering av personuppgifter."
+      },
+      {
+        id: "cyber-operations",
+        title: "Cyber Police Experience",
+        organization: "Ukrainas cyberpolis",
+        period: "2022",
+        description: "Arbetade med bekämpning av cyberbrott i början av kriget mot den ryska angriparen. Deltog i analys av digital data, OSINT-material, loggar och tekniska indikatorer; hjälpte till att identifiera brottslig aktivitet, stödde auktoriserade uppgifter kring datainhämtning och analys samt dokumenterade digitala spår för att motverka cyberbrottslingar."
+      },
+      {
+        id: "education",
+        title: "B.S. Computer Science",
+        organization: "Odesa National Polytechnic University, Odesa, Ukraine",
+        period: "2022 — 2026",
+        description: "Avslutade en utbildning inom Computer Science med fokus på Software Engineering, Calculus & Geometry, Algorithms & Data Structures, Architectural Patterns, Databases, Web Development och DevOps."
+      }
+    ]
+  }
+};
+export const profile = localizedContent.uk.profile;
+export const skillGroups = localizedContent.uk.skillGroups;
+export const projects = localizedContent.uk.projects;
+export const experience = localizedContent.uk.experience;
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBsYWNlaG9sZGVyLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB0eXBlIHsgRXhwZXJpZW5jZUl0ZW0sIExhbmd1YWdlQ29kZSwgUHJvZmlsZSwgUHJvamVjdCwgU2tpbGxHcm91cCB9IGZyb20gXCJAL3R5cGVzXCI7XG5cbmludGVyZmFjZSBMb2NhbGl6ZWRQb3J0Zm9saW8ge1xuICBwcm9maWxlOiBQcm9maWxlO1xuICBza2lsbEdyb3VwczogU2tpbGxHcm91cFtdO1xuICBwcm9qZWN0czogUHJvamVjdFtdO1xuICBleHBlcmllbmNlOiBFeHBlcmllbmNlSXRlbVtdO1xufVxuXG5jb25zdCBjb21tb25Qcm9maWxlID0ge1xuICBuYW1lOiBcIk15a29sYSBLb3NtYWNoZXZza3lpXCIsXG4gIGVtYWlsOiBcImtrb3NtYWNldnNraWpAZ21haWwuY29tXCIsXG4gIHBob25lOiBcIiszODAgNjMgNzM3IDYyNDVcIixcbiAgdGVsZWdyYW06IFwiaHR0cHM6Ly90Lm1lL215a29sYV9rb3NtYWNoZXZza3lpXCIsXG4gIGdpdGh1YjogXCJodHRwczovL2dpdGh1Yi5jb20vTmlrcnV0by0xXCIsXG4gIGxpbmtlZGluOiBcImh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9uaWNrb2xhcy1rb3NtYWNoZXZza3ktNjY1YTE4NDBhL1wiLFxuICByZXN1bWVVcmw6IFwiL3Jlc3VtZS9NeWtvbGFfS29zbWFjaGV2c2t5aV9DVi5wZGZcIixcbn07XG5cbmNvbnN0IGJhY2tlbmRTdGFjayA9IFtcbiAgXCIuTkVUIDYtMTBcIixcbiAgXCIuTkVUIDEwIExUU1wiLFxuICBcIi5ORVQgOVwiLFxuICBcIi5ORVQgOCBMVFNcIixcbiAgXCIuTkVUIDdcIixcbiAgXCIuTkVUIDYgTFRTXCIsXG4gIFwiQyNcIixcbiAgXCJBU1AuTkVUIENvcmVcIixcbiAgXCJBU1AuTkVUIE1WQ1wiLFxuICBcIldlYiBBUElcIixcbiAgXCJSRVNUZnVsIEFQSVwiLFxuICBcIkVudGl0eSBGcmFtZXdvcmsgQ29yZVwiLFxuICBcIkVGIENvcmUgNi0xMFwiLFxuICBcIkxJTlFcIixcbiAgXCJKV1QgYXV0aFwiLFxuICBcIkRlcGVuZGVuY3kgSW5qZWN0aW9uXCIsXG4gIFwiQ2xlYW4gQXJjaGl0ZWN0dXJlIGJhc2ljc1wiLFxuXTtcblxuY29uc3QgZGF0YWJhc2VTdGFjayA9IFtcbiAgXCJQb3N0Z3JlU1FMXCIsXG4gIFwiTWljcm9zb2Z0IFNRTCBTZXJ2ZXJcIixcbiAgXCJTUUxcIixcbiAgXCJRdWVyeSBvcHRpbWl6YXRpb25cIixcbiAgXCJNaWdyYXRpb25zXCIsXG4gIFwiSW5kZXhlc1wiLFxuICBcIlJlbGF0aW9uYWwgZGF0YWJhc2UgZGVzaWduXCIsXG5dO1xuXG5jb25zdCBmcm9udGVuZFN0YWNrID0gW1xuICBcIlJlYWN0XCIsXG4gIFwiVHlwZVNjcmlwdFwiLFxuICBcIkphdmFTY3JpcHRcIixcbiAgXCJWaXRlXCIsXG4gIFwiSFRNTDVcIixcbiAgXCJDU1MzXCIsXG4gIFwiVGFpbHdpbmQgQ1NTXCIsXG4gIFwiQm9vdHN0cmFwXCIsXG4gIFwiUmVzcG9uc2l2ZSBsYXlvdXRcIixcbiAgXCJBUEkgaW50ZWdyYXRpb25cIixcbl07XG5cbmNvbnN0IHRvb2xzU3RhY2sgPSBbXG4gIFwiR2l0XCIsXG4gIFwiR2l0SHViXCIsXG4gIFwiVmlzdWFsIFN0dWRpb1wiLFxuICBcIlZTIENvZGVcIixcbiAgXCJQb3N0bWFuXCIsXG4gIFwiU3dhZ2dlciAvIE9wZW5BUElcIixcbiAgXCJEb2NrZXIgYmFzaWNzXCIsXG4gIFwibnBtXCIsXG4gIFwiVml0ZVwiLFxuICBcIkNocm9tZSBEZXZUb29sc1wiLFxuXTtcblxuY29uc3QgY29tcGxpYW5jZVN0YWNrID0gW1xuICBcIkdEUFIgYmFzaWNzXCIsXG4gIFwiUGVyc29uYWwgZGF0YSBoYW5kbGluZ1wiLFxuICBcIlByaXZhY3ktYXdhcmUgQVBJIGRlc2lnblwiLFxuICBcIlJvbGUtYmFzZWQgYWNjZXNzIGNvbnRyb2xcIixcbiAgXCJEYXRhIHZhbGlkYXRpb25cIixcbiAgXCJTZWN1cmUgY29uZmlndXJhdGlvbiBiYXNpY3NcIixcbl07XG5cbmV4cG9ydCBjb25zdCBsb2NhbGl6ZWRDb250ZW50OiBSZWNvcmQ8TGFuZ3VhZ2VDb2RlLCBMb2NhbGl6ZWRQb3J0Zm9saW8+ID0ge1xuICB1azoge1xuICAgIHByb2ZpbGU6IHtcbiAgICAgIC4uLmNvbW1vblByb2ZpbGUsXG4gICAgICByb2xlOiBcIi5ORVQgRGV2ZWxvcGVyXCIsXG4gICAgICBsb2NhdGlvbjogXCJTd2VkZW5cIixcbiAgICAgIHRhZ2xpbmU6IFwi0KHRgtCy0L7RgNGO0Y4g0YjQstC40LTQutGWINCx0LXQutC10L3QtNC4INC90LAgLk5FVCDRgtCwINC30YDRg9GH0L3RliDRltC90YLQtdGA0YTQtdC50YHQuCDQvdCwIFJlYWN0LlwiLFxuICAgICAgYmlvOiBcIi5ORVQgRGV2ZWxvcGVyINC3IDMrINGA0L7QutCw0LzQuCDQtNC+0YHQstGW0LTRgyDRgNC+0LfRgNC+0LHQutC4INC60L7QvNC10YDRhtGW0LnQvdC40YUg0LLQtdCx0LfQsNGB0YLQvtGB0YPQvdC60ZbQsiwgYmFja2VuZCBBUEkg0YLQsCDRltC90YLQtdCz0YDQsNGG0ZbQuS4g0J/RgNCw0YbRjtGOINC3IEFTUC5ORVQgQ29yZSwgUG9zdGdyZVNRTCwgSldUIGF1dGhlbnRpY2F0aW9uLCBlbWFpbCBmbG93cywgQ2xvdWRpbmFyeSDRgtCwIEdEUFItYXdhcmUg0L7QsdGA0L7QsdC60L7RjiDQv9C10YDRgdC+0L3QsNC70YzQvdC40YUg0LTQsNC90LjRhS4g0JvRjtCx0LvRjiDQvdC+0LLRliDRgtC10YXQvdC+0LvQvtCz0ZbRlywg0YjQstC40LTQutC+INCw0LTQsNC/0YLRg9GO0YHRjCDRliDRhNC+0LrRg9GB0YPRjtGB0Ywg0L3QsCDRh9C40YHRgtC+0LzRgywg0L/RltC00YLRgNC40LzRg9Cy0LDQvdC+0LzRgyDQutC+0LTRliDRgtCwINGA0ZbRiNC10L3QvdGP0YUsINGP0LrRliDRgNC10LDQu9GM0L3QviDQt9Cw0LrRgNC40LLQsNGO0YLRjCDQsdGW0LfQvdC10YEt0L/QvtGC0YDQtdCx0LguXCIsXG4gICAgfSxcbiAgICBza2lsbEdyb3VwczogW1xuICAgICAgeyBjYXRlZ29yeTogXCJCYWNrZW5kXCIsIGl0ZW1zOiBiYWNrZW5kU3RhY2sgfSxcbiAgICAgIHsgY2F0ZWdvcnk6IFwiRGF0YWJhc2VzXCIsIGl0ZW1zOiBkYXRhYmFzZVN0YWNrIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIkZyb250ZW5kXCIsIGl0ZW1zOiBmcm9udGVuZFN0YWNrIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIlRvb2xzXCIsIGl0ZW1zOiB0b29sc1N0YWNrIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIlNlY3VyaXR5ICYgY29tcGxpYW5jZVwiLCBpdGVtczogY29tcGxpYW5jZVN0YWNrIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIkxhbmd1YWdlc1wiLCBpdGVtczogW1wiVWtyYWluaWFuIOKAlCBuYXRpdmVcIiwgXCJFbmdsaXNoIOKAlCBDRUZSIEIxLUIyXCIsIFwiU3dlZGlzaCDigJQgYmVnaW5uZXJcIl0gfSxcbiAgICAgIHsgY2F0ZWdvcnk6IFwiU29mdCBza2lsbHNcIiwgaXRlbXM6IFtcIlByb2JsZW0tc29sdmluZ1wiLCBcItCa0L7QvNGD0L3RltC60LDRhtGW0Y9cIiwgXCLQkNC00LDQv9GC0LjQstC90ZbRgdGC0YxcIiwgXCLQmtC+0LzQsNC90LTQvdCwINGA0L7QsdC+0YLQsFwiLCBcItCi0LDQudC8LdC80LXQvdC10LTQttC80LXQvdGCXCIsIFwi0KPQstCw0LPQsCDQtNC+INC00LXRgtCw0LvQtdC5XCJdIH0sXG4gICAgXSxcbiAgICBwcm9qZWN0czogW1xuICAgICAge1xuICAgICAgICBpZDogXCJhdXRvYWxleGRlLWFwaVwiLFxuICAgICAgICB0aXRsZTogXCJBdXRvQWxleERFLkFwaVwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcItCa0L7QvNC10YDRhtGW0LnQvdC40LkgYmFja2VuZCBBUEkg0LTQu9GPINCw0LLRgtC+0LzQvtCx0ZbQu9GM0L3QvtCz0L4g0LHRltC30L3QtdGB0YMg0Lcg0LrQsNGC0LDQu9C+0LPQvtC8INCw0LLRgtC+LCDQt9Cw0Y/QstC60LDQvNC4INC60LvRltGU0L3RgtGW0LIsINCw0LTQvNGW0L3RgdGM0LrQuNC8INC60LXRgNGD0LLQsNC90L3Rj9C8INC60L7QvdGC0LXQvdGC0L7QvCDRgtCwINCw0LLRgtC+0YDQuNC30LDRhtGW0ZTRji4g0KDQtdCw0LvRltC30L7QstGD0LLQsNCyIFJFU1QgZW5kcG9pbnRzLCBKV1QgKyByZWZyZXNoIHRva2VuIGF1dGhlbnRpY2F0aW9uINGH0LXRgNC10LcgSFRUUC1vbmx5IGNvb2tpZXMsIEdvb2dsZSBhdXRoLCBlbWFpbCBjb25maXJtYXRpb24sIHBhc3N3b3JkIHJlc2V0LCByb2xlLWJhc2VkIGFjY2VzcyDQtNC70Y8g0LDQtNC80ZbQvS3RhNGD0L3QutGG0ZbQuSwgQ2xvdWRpbmFyeSB1cGxvYWQvZGVsZXRlINC00LvRjyDRhNC+0YLQviDQsNCy0YLQviwgUG9zdGdyZVNRTCArIEVGIENvcmUgbWlncmF0aW9ucywg0LzRg9C70YzRgtC40LzQvtCy0L3RliDQvtC/0LjRgdC4INCw0LLRgtC+INGC0LAgR0RQUi1hd2FyZSDRgdGG0LXQvdCw0YDRltGXINC90LAg0LrRiNGC0LDQu9GCINCy0LjQtNCw0LvQtdC90L3RjyDQsNC60LDRg9C90YLQsCDQuSDQvNCw0YHQutGD0LLQsNC90L3RjyBWSU4g0LTQu9GPINCw0L3QvtC90ZbQvNC90LjRhSDQutC+0YDQuNGB0YLRg9Cy0LDRh9GW0LIuXCIsXG4gICAgICAgIHRlY2g6IFtcIkFTUC5ORVQgQ29yZVwiLCBcIkMjXCIsIFwiUG9zdGdyZVNRTFwiLCBcIkVGIENvcmVcIiwgXCJKV1RcIiwgXCJHb29nbGUgQXV0aFwiLCBcIkNsb3VkaW5hcnlcIiwgXCJNYWlsS2l0XCIsIFwiR0RQUlwiXSxcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiBcInRhc2stbWFuYWdlbWVudC1hcHBcIixcbiAgICAgICAgdGl0bGU6IFwiVGFzayBNYW5hZ2VtZW50IFdlYiBBcHBcIixcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJGdWxsLXN0YWNrINC30LDRgdGC0L7RgdGD0L3QvtC6INC00LvRjyDQutC10YDRg9Cy0LDQvdC90Y8g0LfQsNC00LDRh9Cw0LzQuDogQVNQLk5FVCBDb3JlINC90LAg0LHQtdC60LXQvdC00ZYsIEhUTUwvQ1NTICsgQm9vdHN0cmFwINC90LAg0YTRgNC+0L3RgtC10L3QtNGWLCBQb3N0Z3JlU1FMINC00LvRjyDQt9Cx0LXRgNGW0LPQsNC90L3RjyDQtNCw0L3QuNGFLiDQmtC+0YDQuNGB0YLRg9Cy0LDRh9GWINC80L7QttGD0YLRjCDRgdGC0LLQvtGA0Y7QstCw0YLQuCwg0L7QvdC+0LLQu9GO0LLQsNGC0Lgg0YLQsCDQstC40LTQsNC70Y/RgtC4INC30LDQtNCw0YfRli5cIixcbiAgICAgICAgdGVjaDogW1wiQVNQLk5FVCBDb3JlXCIsIFwiUG9zdGdyZVNRTFwiLCBcIkJvb3RzdHJhcFwiLCBcIkdpdFwiXSxcbiAgICAgIH0sXG4gICAgXSxcbiAgICBleHBlcmllbmNlOiBbXG4gICAgICB7XG4gICAgICAgIGlkOiBcImF1dG9hbGV4ZGUtYXBpLWNvbW1lcmNpYWxcIixcbiAgICAgICAgdGl0bGU6IFwiLk5FVCBCYWNrZW5kIERldmVsb3BlciDigJQgQ29tbWVyY2lhbCBQcm9qZWN0XCIsXG4gICAgICAgIG9yZ2FuaXphdGlvbjogXCJBdXRvQWxleERFLkFwaVwiLFxuICAgICAgICBwZXJpb2Q6IFwiMjAyNiDigJQg0KLQtdC/0LXRgNGW0YjQvdGW0Lkg0YfQsNGBXCIsXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwi0KDQvtC30YDQvtCx0LvRj9CyINGWINC/0ZbQtNGC0YDQuNC80YPQstCw0LIgcHJvZHVjdGlvbi1yZWFkeSBiYWNrZW5kINC00LvRjyDQsNCy0YLQvtC80L7QsdGW0LvRjNC90L7Qs9C+INCx0ZbQt9C90LXRgdGDINC90LAgQVNQLk5FVCBDb3JlLiDQn9C+0LHRg9C00YPQstCw0LIgQVBJINC00LvRjyDQutCw0YLQsNC70L7Qs9GDINCw0LLRgtC+LCDQutC70ZbRlNC90YLRgdGM0LrQuNGFINC30LDRj9Cy0L7Quiwg0LrQvtGA0LjRgdGC0YPQstCw0YfRltCyINGC0LAg0LDQtNC80ZbQvdGB0YzQutC40YUg0L7Qv9C10YDQsNGG0ZbQuTsg0L3QsNC70LDRiNGC0L7QstGD0LLQsNCyIFBvc3RncmVTUUwg0YfQtdGA0LXQtyBFbnRpdHkgRnJhbWV3b3JrIENvcmUsINC80ZbQs9GA0LDRhtGW0Zcg0YLQsCDQtNC+0LzQtdC90L3RliDQvNC+0LTQtdC70ZYg0LTQu9GPIENhcnMsIENhclJlcXVlc3RzLCBVc2VycywgRW1haWxDb25maXJtYXRpb25Ub2tlbnMg0ZYgUGFzc3dvcmRSZXNldFRva2Vucy4g0KDQtdCw0LvRltC30YPQstCw0LIgSldUIGF1dGhlbnRpY2F0aW9uINC3IHJlZnJlc2ggdG9rZW5zINGDIEhUVFAtb25seSBjb29raWVzLCBHb29nbGUgbG9naW4sIGVtYWlsIGNvbmZpcm1hdGlvbiwgcGFzc3dvcmQgcmVzZXQsIHJvbGUtYmFzZWQgYXV0aG9yaXphdGlvbiwgQ09SUyDQtNC70Y8gcHJvZHVjdGlvbi3QtNC+0LzQtdC90ZbQsiwgQ2xvdWRpbmFyeSDRltC90YLQtdCz0YDQsNGG0ZbRjiDQtNC70Y8g0LfQsNCy0LDQvdGC0LDQttC10L3QvdGPINC5INCy0LjQtNCw0LvQtdC90L3RjyDRhNC+0YLQviwg0LzRg9C70YzRgtC40LzQvtCy0L3RliDQvtC/0LjRgdC4INCw0LLRgtC+INGC0LAgR0RQUi1hd2FyZSDRhNGD0L3QutGG0ZbRlzog0LLQuNC00LDQu9C10L3QvdGPINCw0LrQsNGD0L3RgtCwLCDQvtCx0YDQvtCx0LrRgyDQv9C10YDRgdC+0L3QsNC70YzQvdC40YUg0LTQsNC90LjRhSDRliDQvNCw0YHQutGD0LLQsNC90L3RjyBWSU4g0YMg0L/Rg9Cx0LvRltGH0L3QuNGFINCy0ZbQtNC/0L7QstGW0LTRj9GFIEFQSS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiBcIm5vcmRpYy1jb2RlLXNvbHV0aW9uc1wiLFxuICAgICAgICB0aXRsZTogXCIuTkVUIERldmVsb3BlclwiLFxuICAgICAgICBvcmdhbml6YXRpb246IFwiTm9yZGljIENvZGUgU29sdXRpb25zXCIsXG4gICAgICAgIHBlcmlvZDogXCLQp9C10YDQstC10L3RjCAyMDIzIOKAlCDQm9C40L/QtdC90YwgMjAyNlwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcItCf0YDQsNGG0Y7QstCw0LIg0L3QsNC0INC60L7QvNC10YDRhtGW0LnQvdC40LzQuCDQstC10LHQt9Cw0YHRgtC+0YHRg9C90LrQsNC80Lgg0LTQu9GPINC80LDQu9C+0LPQviDRgtCwINGB0LXRgNC10LTQvdGM0L7Qs9C+INCx0ZbQt9C90LXRgdGDLCDRgNC+0LfRgNC+0LHQu9GP0Y7Rh9C4IGJhY2tlbmQt0YDRltGI0LXQvdC90Y8g0L3QsCAuTkVUIDYtMTAgLyBBU1AuTkVUIENvcmUg0YLQsCDRltC90YLQtdCz0YDQsNGG0ZbRlyDQtyDQsdCw0LfQsNC80Lgg0LTQsNC90LjRhS4g0J/RgNC+0ZTQutGC0YPQstCw0LIgUkVTVCBBUEksIERUTy3QvNC+0LTQtdC70ZYg0YLQsCDRgdC10YDQstGW0YHQvdC40Lkg0YjQsNGALCDQvtC/0YLQuNC80ZbQt9GD0LLQsNCyIFNRTC3Qt9Cw0L/QuNGC0LgsINC/0YDQsNGG0Y7QstCw0LIg0LcgRW50aXR5IEZyYW1ld29yayBDb3JlLCBTUUwgU2VydmVyINGWIFBvc3RncmVTUUwsINCy0L/RgNC+0LLQsNC00LbRg9Cy0LDQsiDQsNCy0YLQvtGA0LjQt9Cw0YbRltGOLCDQstCw0LvRltC00LDRhtGW0Y4g0LTQsNC90LjRhSwgU3dhZ2dlci3QtNC+0LrRg9C80LXQvdGC0LDRhtGW0Y4g0YLQsCDQsNC00LDQv9GC0LjQstC90ZYgVUkt0YfQsNGB0YLQuNC90Lgg0L3QsCBCb290c3RyYXAvUmVhY3QuINCR0YDQsNCyINGD0YfQsNGB0YLRjCDRgyDQutC+0LQt0YDQtdCyJ9GOLCDRgNC10YTQsNC60YLQvtGA0LjQvdCz0YMg0LvQtdCz0LDRgdGWLdC80L7QtNGD0LvRltCyLCDQvNGW0LPRgNCw0YbRltGXINC90LAg0YHRg9GH0LDRgdC90ZbRiNGDIC5ORVQt0LDRgNGF0ZbRgtC10LrRgtGD0YDRgyDRgtCwINCy0L/RgNC+0LLQsNC00LbQtdC90L3RliBHRFBSLWF3YXJlINC/0ZbQtNGF0L7QtNGW0LIg0LTQviDQvtCx0YDQvtCx0LrQuCDQv9C10YDRgdC+0L3QsNC70YzQvdC40YUg0LTQsNC90LjRhS5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiBcImN5YmVyLW9wZXJhdGlvbnNcIixcbiAgICAgICAgdGl0bGU6IFwiQ3liZXIgUG9saWNlIEV4cGVyaWVuY2VcIixcbiAgICAgICAgb3JnYW5pemF0aW9uOiBcItCa0ZbQsdC10YDQv9C+0LvRltGG0ZbRjyDQo9C60YDQsNGX0L3QuFwiLFxuICAgICAgICBwZXJpb2Q6IFwiMjAyMlwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcItCf0YDQsNGG0Y7QstCw0LIg0YMg0L3QsNC/0YDRj9C80ZYg0L/RgNC+0YLQuNC00ZbRlyDQutGW0LHQtdGA0LfQu9C+0YfQuNC90L3QvtGB0YLRliDQvdCwINC/0L7Rh9Cw0YLQutGDINCy0ZbQudC90Lgg0L/RgNC+0YLQuCDQsNCz0YDQtdGB0L7RgNCwINGA0L7RgdGW0ZcuINCR0YDQsNCyINGD0YfQsNGB0YLRjCDQsiDQsNC90LDQu9GW0LfRliDRhtC40YTRgNC+0LLQuNGFINC00LDQvdC40YUsIE9TSU5ULdC80LDRgtC10YDRltCw0LvRltCyLCDQu9C+0LPRltCyINGC0LAg0YLQtdGF0L3RltGH0L3QuNGFINGW0L3QtNC40LrQsNGC0L7RgNGW0LIsINC00L7Qv9C+0LzQsNCz0LDQsiDRltC3INCy0LjRj9Cy0LvQtdC90L3Rj9C8INC30LvQvtGH0LjQvdC90L7RlyDQsNC60YLQuNCy0L3QvtGB0YLRliwg0L/RltC00YLRgNC40LzQutC+0Y4g0LDQstGC0L7RgNC40LfQvtCy0LDQvdC40YUg0LfQsNC00LDRhyDQtyDQv9C10YDQtdGF0L7Qv9C70LXQvdC90Y8g0YLQsCDQsNC90LDQu9GW0LfRgyDQtNCw0L3QuNGFLCDQsCDRgtCw0LrQvtC2INC00L7QutGD0LzQtdC90YLRg9Cy0LDQvdC90Y/QvCDRhtC40YTRgNC+0LLQuNGFINGB0LvRltC00ZbQsiDQtNC70Y8g0L/RgNC+0YLQuNC00ZbRlyDQt9C70L7Rh9C40L3RhtGP0LwuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogXCJlZHVjYXRpb25cIixcbiAgICAgICAgdGl0bGU6IFwiQi5TLiBDb21wdXRlciBTY2llbmNlXCIsXG4gICAgICAgIG9yZ2FuaXphdGlvbjogXCJPZGVzYSBOYXRpb25hbCBQb2x5dGVjaG5pYyBVbml2ZXJzaXR5LCBPZGVzYSwgVWtyYWluZVwiLFxuICAgICAgICBwZXJpb2Q6IFwiMjAyMiDigJQgMjAyNlwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcItCX0LDQstC10YDRiNC40LIg0L3QsNCy0YfQsNC90L3RjyDQt9CwINC90LDQv9GA0Y/QvNC+0LwgQ29tcHV0ZXIgU2NpZW5jZS4g0J7RgdC90L7QstC90LjQuSDRhNC+0LrRg9GBOiBTb2Z0d2FyZSBFbmdpbmVlcmluZywgQ2FsY3VsdXMgJiBHZW9tZXRyeSwgQWxnb3JpdGhtcyAmIERhdGEgU3RydWN0dXJlcywgQXJjaGl0ZWN0dXJhbCBQYXR0ZXJucywgRGF0YWJhc2VzLCBXZWIgRGV2ZWxvcG1lbnQg0YLQsCBEZXZPcHMuXCIsXG4gICAgICB9LFxuICAgIF0sXG4gIH0sXG4gIGVuOiB7XG4gICAgcHJvZmlsZToge1xuICAgICAgLi4uY29tbW9uUHJvZmlsZSxcbiAgICAgIHJvbGU6IFwiLk5FVCBEZXZlbG9wZXJcIixcbiAgICAgIGxvY2F0aW9uOiBcIlN3ZWRlblwiLFxuICAgICAgdGFnbGluZTogXCJJIGJ1aWxkIGZhc3QgLk5FVCBiYWNrZW5kcyBhbmQgY2xlYW4gUmVhY3QgaW50ZXJmYWNlcy5cIixcbiAgICAgIGJpbzogXCIuTkVUIERldmVsb3BlciB3aXRoIDMrIHllYXJzIG9mIGV4cGVyaWVuY2UgYnVpbGRpbmcgY29tbWVyY2lhbCB3ZWIgYXBwbGljYXRpb25zLCBiYWNrZW5kIEFQSXMsIGFuZCBpbnRlZ3JhdGlvbnMuIEkgd29yayB3aXRoIEFTUC5ORVQgQ29yZSwgUG9zdGdyZVNRTCwgSldUIGF1dGhlbnRpY2F0aW9uLCBlbWFpbCBmbG93cywgQ2xvdWRpbmFyeSwgYW5kIEdEUFItYXdhcmUgcGVyc29uYWwgZGF0YSBoYW5kbGluZy4gSSBsZWFybiBuZXcgdGVjaG5vbG9naWVzIHF1aWNrbHkgYW5kIGZvY3VzIG9uIGNsZWFuLCBtYWludGFpbmFibGUgY29kZSB0aGF0IHNvbHZlcyByZWFsIGJ1c2luZXNzIG5lZWRzLlwiLFxuICAgIH0sXG4gICAgc2tpbGxHcm91cHM6IFtcbiAgICAgIHsgY2F0ZWdvcnk6IFwiQmFja2VuZFwiLCBpdGVtczogYmFja2VuZFN0YWNrIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIkRhdGFiYXNlc1wiLCBpdGVtczogZGF0YWJhc2VTdGFjayB9LFxuICAgICAgeyBjYXRlZ29yeTogXCJGcm9udGVuZFwiLCBpdGVtczogZnJvbnRlbmRTdGFjayB9LFxuICAgICAgeyBjYXRlZ29yeTogXCJUb29sc1wiLCBpdGVtczogdG9vbHNTdGFjayB9LFxuICAgICAgeyBjYXRlZ29yeTogXCJTZWN1cml0eSAmIGNvbXBsaWFuY2VcIiwgaXRlbXM6IGNvbXBsaWFuY2VTdGFjayB9LFxuICAgICAgeyBjYXRlZ29yeTogXCJMYW5ndWFnZXNcIiwgaXRlbXM6IFtcIlVrcmFpbmlhbiDigJQgbmF0aXZlXCIsIFwiRW5nbGlzaCDigJQgQ0VGUiBCMS1CMlwiLCBcIlN3ZWRpc2gg4oCUIGJlZ2lubmVyXCJdIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIlNvZnQgc2tpbGxzXCIsIGl0ZW1zOiBbXCJQcm9ibGVtLXNvbHZpbmdcIiwgXCJDb21tdW5pY2F0aW9uXCIsIFwiQWRhcHRhYmlsaXR5XCIsIFwiVGVhbXdvcmtcIiwgXCJUaW1lIG1hbmFnZW1lbnRcIiwgXCJBdHRlbnRpb24gdG8gZGV0YWlsXCJdIH0sXG4gICAgXSxcbiAgICBwcm9qZWN0czogW1xuICAgICAge1xuICAgICAgICBpZDogXCJhdXRvYWxleGRlLWFwaVwiLFxuICAgICAgICB0aXRsZTogXCJBdXRvQWxleERFLkFwaVwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIkEgY29tbWVyY2lhbCBiYWNrZW5kIEFQSSBmb3IgYW4gYXV0b21vdGl2ZSBidXNpbmVzcyB3aXRoIGEgY2FyIGNhdGFsb2csIGN1c3RvbWVyIHJlcXVlc3RzLCBhZG1pbiBjb250ZW50IG1hbmFnZW1lbnQsIGFuZCBhdXRoZW50aWNhdGlvbi4gV29ya2VkIG9uIFJFU1QgZW5kcG9pbnRzLCBKV1QgKyByZWZyZXNoIHRva2VuIGF1dGhlbnRpY2F0aW9uIHZpYSBIVFRQLW9ubHkgY29va2llcywgR29vZ2xlIGF1dGgsIGVtYWlsIGNvbmZpcm1hdGlvbiwgcGFzc3dvcmQgcmVzZXQsIHJvbGUtYmFzZWQgYWNjZXNzIGZvciBhZG1pbiBvcGVyYXRpb25zLCBDbG91ZGluYXJ5IHVwbG9hZC9kZWxldGUgZm9yIGNhciBpbWFnZXMsIFBvc3RncmVTUUwgKyBFRiBDb3JlIG1pZ3JhdGlvbnMsIG11bHRpbGluZ3VhbCBjYXIgZGVzY3JpcHRpb25zLCBhbmQgR0RQUi1hd2FyZSBmbG93cyBzdWNoIGFzIGFjY291bnQgZGVsZXRpb24gYW5kIFZJTiBtYXNraW5nIGZvciBhbm9ueW1vdXMgdXNlcnMuXCIsXG4gICAgICAgIHRlY2g6IFtcIkFTUC5ORVQgQ29yZVwiLCBcIkMjXCIsIFwiUG9zdGdyZVNRTFwiLCBcIkVGIENvcmVcIiwgXCJKV1RcIiwgXCJHb29nbGUgQXV0aFwiLCBcIkNsb3VkaW5hcnlcIiwgXCJNYWlsS2l0XCIsIFwiR0RQUlwiXSxcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiBcInRhc2stbWFuYWdlbWVudC1hcHBcIixcbiAgICAgICAgdGl0bGU6IFwiVGFzayBNYW5hZ2VtZW50IFdlYiBBcHBcIixcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJBIGZ1bGwtc3RhY2sgdGFzayBtYW5hZ2VtZW50IGFwcCB3aXRoIEFTUC5ORVQgQ29yZSBvbiB0aGUgYmFja2VuZCwgSFRNTC9DU1MgKyBCb290c3RyYXAgb24gdGhlIGZyb250ZW5kLCBhbmQgUG9zdGdyZVNRTCBmb3IgZGF0YSBzdG9yYWdlLiBVc2VycyBjYW4gY3JlYXRlLCB1cGRhdGUsIGFuZCBkZWxldGUgdGFza3MuXCIsXG4gICAgICAgIHRlY2g6IFtcIkFTUC5ORVQgQ29yZVwiLCBcIlBvc3RncmVTUUxcIiwgXCJCb290c3RyYXBcIiwgXCJHaXRcIl0sXG4gICAgICB9LFxuICAgIF0sXG4gICAgZXhwZXJpZW5jZTogW1xuICAgICAge1xuICAgICAgICBpZDogXCJhdXRvYWxleGRlLWFwaS1jb21tZXJjaWFsXCIsXG4gICAgICAgIHRpdGxlOiBcIi5ORVQgQmFja2VuZCBEZXZlbG9wZXIg4oCUIENvbW1lcmNpYWwgUHJvamVjdFwiLFxuICAgICAgICBvcmdhbml6YXRpb246IFwiQXV0b0FsZXhERS5BcGlcIixcbiAgICAgICAgcGVyaW9kOiBcIjIwMjYg4oCUIFByZXNlbnRcIixcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJEZXZlbG9wZWQgYW5kIG1haW50YWluZWQgYSBwcm9kdWN0aW9uLXJlYWR5IGJhY2tlbmQgZm9yIGFuIGF1dG9tb3RpdmUgYnVzaW5lc3Mgd2l0aCBBU1AuTkVUIENvcmUuIEJ1aWx0IEFQSXMgZm9yIHRoZSBjYXIgY2F0YWxvZywgY3VzdG9tZXIgcmVxdWVzdHMsIHVzZXJzLCBhbmQgYWRtaW4gb3BlcmF0aW9uczsgY29uZmlndXJlZCBQb3N0Z3JlU1FMIHdpdGggRW50aXR5IEZyYW1ld29yayBDb3JlLCBtaWdyYXRpb25zLCBhbmQgZG9tYWluIG1vZGVscyBmb3IgQ2FycywgQ2FyUmVxdWVzdHMsIFVzZXJzLCBFbWFpbENvbmZpcm1hdGlvblRva2VucywgYW5kIFBhc3N3b3JkUmVzZXRUb2tlbnMuIEltcGxlbWVudGVkIEpXVCBhdXRoZW50aWNhdGlvbiB3aXRoIHJlZnJlc2ggdG9rZW5zIGluIEhUVFAtb25seSBjb29raWVzLCBHb29nbGUgbG9naW4sIGVtYWlsIGNvbmZpcm1hdGlvbiwgcGFzc3dvcmQgcmVzZXQsIHJvbGUtYmFzZWQgYXV0aG9yaXphdGlvbiwgcHJvZHVjdGlvbiBDT1JTIGNvbmZpZ3VyYXRpb24sIENsb3VkaW5hcnkgaW1hZ2UgdXBsb2FkL2RlbGV0ZSwgbXVsdGlsaW5ndWFsIGNhciBkZXNjcmlwdGlvbnMsIGFuZCBHRFBSLWF3YXJlIGZlYXR1cmVzIGluY2x1ZGluZyBhY2NvdW50IGRlbGV0aW9uLCBwZXJzb25hbCBkYXRhIGhhbmRsaW5nLCBhbmQgVklOIG1hc2tpbmcgaW4gcHVibGljIEFQSSByZXNwb25zZXMuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogXCJub3JkaWMtY29kZS1zb2x1dGlvbnNcIixcbiAgICAgICAgdGl0bGU6IFwiLk5FVCBEZXZlbG9wZXJcIixcbiAgICAgICAgb3JnYW5pemF0aW9uOiBcIk5vcmRpYyBDb2RlIFNvbHV0aW9uc1wiLFxuICAgICAgICBwZXJpb2Q6IFwiSnVuZSAyMDIzIOKAlCBKdWx5IDIwMjZcIixcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJXb3JrZWQgb24gY29tbWVyY2lhbCB3ZWIgYXBwbGljYXRpb25zIGZvciBzbWFsbCBhbmQgbWVkaXVtLXNpemVkIGJ1c2luZXNzZXMsIGJ1aWxkaW5nIGJhY2tlbmQgc29sdXRpb25zIHdpdGggLk5FVCA2LTEwIC8gQVNQLk5FVCBDb3JlIGFuZCBkYXRhYmFzZSBpbnRlZ3JhdGlvbnMuIERlc2lnbmVkIFJFU1QgQVBJcywgRFRPIG1vZGVscywgYW5kIHNlcnZpY2UtbGF5ZXIgbG9naWM7IG9wdGltaXplZCBTUUwgcXVlcmllczsgd29ya2VkIHdpdGggRW50aXR5IEZyYW1ld29yayBDb3JlLCBTUUwgU2VydmVyLCBhbmQgUG9zdGdyZVNRTDsgaW1wbGVtZW50ZWQgYXV0aGVudGljYXRpb24sIGRhdGEgdmFsaWRhdGlvbiwgU3dhZ2dlciBkb2N1bWVudGF0aW9uLCBhbmQgcmVzcG9uc2l2ZSBVSSBwYXJ0cyB3aXRoIEJvb3RzdHJhcC9SZWFjdC4gUGFydGljaXBhdGVkIGluIGNvZGUgcmV2aWV3cywgcmVmYWN0b3JlZCBsZWdhY3kgbW9kdWxlcywgaGVscGVkIG1pZ3JhdGUgc3lzdGVtcyB0b3dhcmQgYSBtb3JlIG1vZGVybiAuTkVUIGFyY2hpdGVjdHVyZSwgYW5kIGFwcGxpZWQgR0RQUi1hd2FyZSBhcHByb2FjaGVzIHRvIHBlcnNvbmFsIGRhdGEgaGFuZGxpbmcuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogXCJjeWJlci1vcGVyYXRpb25zXCIsXG4gICAgICAgIHRpdGxlOiBcIkN5YmVyIFBvbGljZSBFeHBlcmllbmNlXCIsXG4gICAgICAgIG9yZ2FuaXphdGlvbjogXCJDeWJlciBQb2xpY2Ugb2YgVWtyYWluZVwiLFxuICAgICAgICBwZXJpb2Q6IFwiMjAyMlwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIldvcmtlZCBpbiBjeWJlcmNyaW1lIGNvdW50ZXJhY3Rpb24gYXQgdGhlIGJlZ2lubmluZyBvZiB0aGUgd2FyIGFnYWluc3QgdGhlIFJ1c3NpYW4gYWdncmVzc29yLiBUb29rIHBhcnQgaW4gYW5hbHl6aW5nIGRpZ2l0YWwgZGF0YSwgT1NJTlQgbWF0ZXJpYWxzLCBsb2dzLCBhbmQgdGVjaG5pY2FsIGluZGljYXRvcnM7IGhlbHBlZCBpZGVudGlmeSBjcmltaW5hbCBhY3Rpdml0eSwgc3VwcG9ydGVkIGF1dGhvcml6ZWQgZGF0YSBpbnRlcmNlcHRpb24gYW5kIGFuYWx5c2lzIHRhc2tzLCBhbmQgZG9jdW1lbnRlZCBkaWdpdGFsIHRyYWNlcyB0byBhc3Npc3QgaW52ZXN0aWdhdGlvbnMgYW5kIGNvdW50ZXIgY3liZXJjcmltaW5hbHMuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogXCJlZHVjYXRpb25cIixcbiAgICAgICAgdGl0bGU6IFwiQi5TLiBDb21wdXRlciBTY2llbmNlXCIsXG4gICAgICAgIG9yZ2FuaXphdGlvbjogXCJPZGVzYSBOYXRpb25hbCBQb2x5dGVjaG5pYyBVbml2ZXJzaXR5LCBPZGVzYSwgVWtyYWluZVwiLFxuICAgICAgICBwZXJpb2Q6IFwiMjAyMiDigJQgMjAyNlwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIkNvbXBsZXRlZCBhIENvbXB1dGVyIFNjaWVuY2UgZGVncmVlIHdpdGggYSBmb2N1cyBvbiBTb2Z0d2FyZSBFbmdpbmVlcmluZywgQ2FsY3VsdXMgJiBHZW9tZXRyeSwgQWxnb3JpdGhtcyAmIERhdGEgU3RydWN0dXJlcywgQXJjaGl0ZWN0dXJhbCBQYXR0ZXJucywgRGF0YWJhc2VzLCBXZWIgRGV2ZWxvcG1lbnQsIGFuZCBEZXZPcHMuXCIsXG4gICAgICB9LFxuICAgIF0sXG4gIH0sXG4gIHN2OiB7XG4gICAgcHJvZmlsZToge1xuICAgICAgLi4uY29tbW9uUHJvZmlsZSxcbiAgICAgIHJvbGU6IFwiLk5FVC11dHZlY2tsYXJlXCIsXG4gICAgICBsb2NhdGlvbjogXCJTdmVyaWdlXCIsXG4gICAgICB0YWdsaW5lOiBcIkphZyBieWdnZXIgc25hYmJhIC5ORVQtYmFja2VuZHMgb2NoIHR5ZGxpZ2EgUmVhY3QtZ3LDpG5zc25pdHQuXCIsXG4gICAgICBiaW86IFwiLk5FVC11dHZlY2tsYXJlIG1lZCAzKyDDpXJzIGVyZmFyZW5oZXQgYXYga29tbWVyc2llbGxhIHdlYmJhcHBsaWthdGlvbmVyLCBiYWNrZW5kLUFQSTplciBvY2ggaW50ZWdyYXRpb25lci4gSmFnIGFyYmV0YXIgbWVkIEFTUC5ORVQgQ29yZSwgUG9zdGdyZVNRTCwgSldULWF1dGVudGlzZXJpbmcsIGUtcG9zdGZsw7ZkZW4sIENsb3VkaW5hcnkgb2NoIEdEUFItbWVkdmV0ZW4gaGFudGVyaW5nIGF2IHBlcnNvbnVwcGdpZnRlci4gSmFnIGzDpHIgbWlnIG55IHRla25payBzbmFiYnQgb2NoIGZva3VzZXJhciBww6UgcmVuLCB1bmRlcmjDpWxsYmFyIGtvZCBzb20gbMO2c2VyIHZlcmtsaWdhIGFmZsOkcnNiZWhvdi5cIixcbiAgICB9LFxuICAgIHNraWxsR3JvdXBzOiBbXG4gICAgICB7IGNhdGVnb3J5OiBcIkJhY2tlbmRcIiwgaXRlbXM6IGJhY2tlbmRTdGFjayB9LFxuICAgICAgeyBjYXRlZ29yeTogXCJEYXRhYmFzZXJcIiwgaXRlbXM6IGRhdGFiYXNlU3RhY2sgfSxcbiAgICAgIHsgY2F0ZWdvcnk6IFwiRnJvbnRlbmRcIiwgaXRlbXM6IGZyb250ZW5kU3RhY2sgfSxcbiAgICAgIHsgY2F0ZWdvcnk6IFwiVmVya3R5Z1wiLCBpdGVtczogdG9vbHNTdGFjayB9LFxuICAgICAgeyBjYXRlZ29yeTogXCJTw6RrZXJoZXQgJiBlZnRlcmxldm5hZFwiLCBpdGVtczogY29tcGxpYW5jZVN0YWNrIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIlNwcsOla1wiLCBpdGVtczogW1wiVWtyYWluc2thIOKAlCBtb2RlcnNtw6VsXCIsIFwiRW5nZWxza2Eg4oCUIENFRlIgQjEtQjJcIiwgXCJTdmVuc2thIOKAlCBueWLDtnJqYXJlXCJdIH0sXG4gICAgICB7IGNhdGVnb3J5OiBcIk1qdWthIGbDpHJkaWdoZXRlclwiLCBpdGVtczogW1wiUHJvYmxlbWzDtnNuaW5nXCIsIFwiS29tbXVuaWthdGlvblwiLCBcIkFucGFzc25pbmdzZsO2cm3DpWdhXCIsIFwiVGVhbWFyYmV0ZVwiLCBcIlRpZHNoYW50ZXJpbmdcIiwgXCJOb2dncmFubmhldFwiXSB9LFxuICAgIF0sXG4gICAgcHJvamVjdHM6IFtcbiAgICAgIHtcbiAgICAgICAgaWQ6IFwiYXV0b2FsZXhkZS1hcGlcIixcbiAgICAgICAgdGl0bGU6IFwiQXV0b0FsZXhERS5BcGlcIixcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJFdHQga29tbWVyc2llbGx0IGJhY2tlbmQtQVBJIGbDtnIgZW4gYmlsdmVya3NhbWhldCBtZWQgYmlsa2F0YWxvZywga3VuZGbDtnJmcsOlZ25pbmdhciwgYWRtaW5pc3RyYXRpdiBpbm5laMOlbGxzaGFudGVyaW5nIG9jaCBhdXRlbnRpc2VyaW5nLiBBcmJldGFkZSBtZWQgUkVTVC1lbmRwb2ludHMsIEpXVCArIHJlZnJlc2ggdG9rZW5zIHZpYSBIVFRQLW9ubHkgY29va2llcywgR29vZ2xlIGF1dGgsIGUtcG9zdGJla3LDpGZ0ZWxzZSwgbMO2c2Vub3Jkc8OldGVyc3TDpGxsbmluZywgcm9sbGJhc2VyYWQgw6V0a29tc3QgZsO2ciBhZG1pbmZ1bmt0aW9uZXIsIENsb3VkaW5hcnkgdXBsb2FkL2RlbGV0ZSBmw7ZyIGJpbGJpbGRlciwgUG9zdGdyZVNRTCArIEVGIENvcmUgbWlncmF0aW9ucywgZmxlcnNwcsOla2lnYSBiaWxiZXNrcml2bmluZ2FyIG9jaCBHRFBSLW1lZHZldG5hIGZsw7ZkZW4gc29tIGtvbnRvYm9ydHRhZ25pbmcgb2NoIG1hc2tlcmluZyBhdiBWSU4gZsO2ciBhbm9ueW1hIGFudsOkbmRhcmUuXCIsXG4gICAgICAgIHRlY2g6IFtcIkFTUC5ORVQgQ29yZVwiLCBcIkMjXCIsIFwiUG9zdGdyZVNRTFwiLCBcIkVGIENvcmVcIiwgXCJKV1RcIiwgXCJHb29nbGUgQXV0aFwiLCBcIkNsb3VkaW5hcnlcIiwgXCJNYWlsS2l0XCIsIFwiR0RQUlwiXSxcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiBcInRhc2stbWFuYWdlbWVudC1hcHBcIixcbiAgICAgICAgdGl0bGU6IFwiVGFzayBNYW5hZ2VtZW50IFdlYiBBcHBcIixcbiAgICAgICAgZGVzY3JpcHRpb246XG4gICAgICAgICAgXCJFbiBmdWxsc3RhY2stYXBwbGlrYXRpb24gZsO2ciB1cHBnaWZ0c2hhbnRlcmluZyBtZWQgQVNQLk5FVCBDb3JlIGkgYmFja2VuZCwgSFRNTC9DU1MgKyBCb290c3RyYXAgaSBmcm9udGVuZCBvY2ggUG9zdGdyZVNRTCBmw7ZyIGRhdGFsYWdyaW5nLiBBbnbDpG5kYXJlIGthbiBza2FwYSwgdXBwZGF0ZXJhIG9jaCB0YSBib3J0IHVwcGdpZnRlci5cIixcbiAgICAgICAgdGVjaDogW1wiQVNQLk5FVCBDb3JlXCIsIFwiUG9zdGdyZVNRTFwiLCBcIkJvb3RzdHJhcFwiLCBcIkdpdFwiXSxcbiAgICAgIH0sXG4gICAgXSxcbiAgICBleHBlcmllbmNlOiBbXG4gICAgICB7XG4gICAgICAgIGlkOiBcImF1dG9hbGV4ZGUtYXBpLWNvbW1lcmNpYWxcIixcbiAgICAgICAgdGl0bGU6IFwiLk5FVCBCYWNrZW5kIERldmVsb3BlciDigJQgS29tbWVyc2llbGx0IHByb2pla3RcIixcbiAgICAgICAgb3JnYW5pemF0aW9uOiBcIkF1dG9BbGV4REUuQXBpXCIsXG4gICAgICAgIHBlcmlvZDogXCIyMDI2IOKAlCBOdVwiLFxuICAgICAgICBkZXNjcmlwdGlvbjpcbiAgICAgICAgICBcIlV0dmVja2xhZGUgb2NoIHVuZGVyaMO2bGwgZW4gcHJvZHVjdGlvbi1yZWFkeSBiYWNrZW5kIGbDtnIgZW4gYmlsdmVya3NhbWhldCBtZWQgQVNQLk5FVCBDb3JlLiBCeWdnZGUgQVBJOmVyIGbDtnIgYmlsa2F0YWxvZywga3VuZGbDtnJmcsOlZ25pbmdhciwgYW52w6RuZGFyZSBvY2ggYWRtaW5mdW5rdGlvbmVyOyBrb25maWd1cmVyYWRlIFBvc3RncmVTUUwgbWVkIEVudGl0eSBGcmFtZXdvcmsgQ29yZSwgbWlncmF0aW9ucyBvY2ggZG9tw6RubW9kZWxsZXIgZsO2ciBDYXJzLCBDYXJSZXF1ZXN0cywgVXNlcnMsIEVtYWlsQ29uZmlybWF0aW9uVG9rZW5zIG9jaCBQYXNzd29yZFJlc2V0VG9rZW5zLiBJbXBsZW1lbnRlcmFkZSBKV1QtYXV0ZW50aXNlcmluZyBtZWQgcmVmcmVzaCB0b2tlbnMgaSBIVFRQLW9ubHkgY29va2llcywgR29vZ2xlIGxvZ2luLCBlLXBvc3RiZWtyw6RmdGVsc2UsIGzDtnNlbm9yZHPDpXRlcnN0w6RsbG5pbmcsIHJvbGxiYXNlcmFkIGF1a3RvcmlzZXJpbmcsIENPUlMgZsO2ciBwcm9kdWt0aW9uc2RvbcOkbmVyLCBDbG91ZGluYXJ5LWludGVncmVyaW5nIGbDtnIgdXBwbGFkZG5pbmcvYm9ydHRhZ25pbmcgYXYgYmlsZGVyLCBmbGVyc3Byw6VraWdhIGJpbGJlc2tyaXZuaW5nYXIgb2NoIEdEUFItbWVkdmV0bmEgZnVua3Rpb25lciBzb20ga29udG9ib3J0dGFnbmluZywgaGFudGVyaW5nIGF2IHBlcnNvbnVwcGdpZnRlciBvY2ggbWFza2VyaW5nIGF2IFZJTiBpIHB1Ymxpa2EgQVBJLXN2YXIuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogXCJub3JkaWMtY29kZS1zb2x1dGlvbnNcIixcbiAgICAgICAgdGl0bGU6IFwiLk5FVC11dHZlY2tsYXJlXCIsXG4gICAgICAgIG9yZ2FuaXphdGlvbjogXCJOb3JkaWMgQ29kZSBTb2x1dGlvbnNcIixcbiAgICAgICAgcGVyaW9kOiBcIkp1bmkgMjAyMyDigJQgSnVsaSAyMDI2XCIsXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiQXJiZXRhZGUgbWVkIGtvbW1lcnNpZWxsYSB3ZWJiYXBwbGlrYXRpb25lciBmw7ZyIHNtw6Ugb2NoIG1lZGVsc3RvcmEgZsO2cmV0YWcgb2NoIGJ5Z2dkZSBiYWNrZW5kLWzDtnNuaW5nYXIgbWVkIC5ORVQgNi0xMCAvIEFTUC5ORVQgQ29yZSBzYW10IGRhdGFiYXNpbnRlZ3JhdGlvbmVyLiBEZXNpZ25hZGUgUkVTVCBBUEk6ZXIsIERUTy1tb2RlbGxlciBvY2ggc2VydmljZWxhZ2VyOyBvcHRpbWVyYWRlIFNRTC1mcsOlZ29yOyBhcmJldGFkZSBtZWQgRW50aXR5IEZyYW1ld29yayBDb3JlLCBTUUwgU2VydmVyIG9jaCBQb3N0Z3JlU1FMOyBpbXBsZW1lbnRlcmFkZSBhdXRlbnRpc2VyaW5nLCBkYXRhdmFsaWRlcmluZywgU3dhZ2dlci1kb2t1bWVudGF0aW9uIG9jaCByZXNwb25zaXZhIFVJLWRlbGFyIG1lZCBCb290c3RyYXAvUmVhY3QuIERlbHRvZyBpIGtvZGdyYW5za25pbmdhciwgcmVmYWt0b3JlcmluZyBhdiBsZWdhY3ktbW9kdWxlciwgbWlncmVyaW5nIG1vdCBtb2Rlcm5hcmUgLk5FVC1hcmtpdGVrdHVyIG9jaCBHRFBSLW1lZHZldGVuIGhhbnRlcmluZyBhdiBwZXJzb251cHBnaWZ0ZXIuXCIsXG4gICAgICB9LFxuICAgICAge1xuICAgICAgICBpZDogXCJjeWJlci1vcGVyYXRpb25zXCIsXG4gICAgICAgIHRpdGxlOiBcIkN5YmVyIFBvbGljZSBFeHBlcmllbmNlXCIsXG4gICAgICAgIG9yZ2FuaXphdGlvbjogXCJVa3JhaW5hcyBjeWJlcnBvbGlzXCIsXG4gICAgICAgIHBlcmlvZDogXCIyMDIyXCIsXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiQXJiZXRhZGUgbWVkIGJla8OkbXBuaW5nIGF2IGN5YmVyYnJvdHQgaSBiw7ZyamFuIGF2IGtyaWdldCBtb3QgZGVuIHJ5c2thIGFuZ3JpcGFyZW4uIERlbHRvZyBpIGFuYWx5cyBhdiBkaWdpdGFsIGRhdGEsIE9TSU5ULW1hdGVyaWFsLCBsb2dnYXIgb2NoIHRla25pc2thIGluZGlrYXRvcmVyOyBoasOkbHB0ZSB0aWxsIGF0dCBpZGVudGlmaWVyYSBicm90dHNsaWcgYWt0aXZpdGV0LCBzdMO2ZGRlIGF1a3RvcmlzZXJhZGUgdXBwZ2lmdGVyIGtyaW5nIGRhdGFpbmjDpG10bmluZyBvY2ggYW5hbHlzIHNhbXQgZG9rdW1lbnRlcmFkZSBkaWdpdGFsYSBzcMOlciBmw7ZyIGF0dCBtb3R2ZXJrYSBjeWJlcmJyb3R0c2xpbmdhci5cIixcbiAgICAgIH0sXG4gICAgICB7XG4gICAgICAgIGlkOiBcImVkdWNhdGlvblwiLFxuICAgICAgICB0aXRsZTogXCJCLlMuIENvbXB1dGVyIFNjaWVuY2VcIixcbiAgICAgICAgb3JnYW5pemF0aW9uOiBcIk9kZXNhIE5hdGlvbmFsIFBvbHl0ZWNobmljIFVuaXZlcnNpdHksIE9kZXNhLCBVa3JhaW5lXCIsXG4gICAgICAgIHBlcmlvZDogXCIyMDIyIOKAlCAyMDI2XCIsXG4gICAgICAgIGRlc2NyaXB0aW9uOlxuICAgICAgICAgIFwiQXZzbHV0YWRlIGVuIHV0YmlsZG5pbmcgaW5vbSBDb21wdXRlciBTY2llbmNlIG1lZCBmb2t1cyBww6UgU29mdHdhcmUgRW5naW5lZXJpbmcsIENhbGN1bHVzICYgR2VvbWV0cnksIEFsZ29yaXRobXMgJiBEYXRhIFN0cnVjdHVyZXMsIEFyY2hpdGVjdHVyYWwgUGF0dGVybnMsIERhdGFiYXNlcywgV2ViIERldmVsb3BtZW50IG9jaCBEZXZPcHMuXCIsXG4gICAgICB9LFxuICAgIF0sXG4gIH0sXG59O1xuXG5leHBvcnQgY29uc3QgcHJvZmlsZSA9IGxvY2FsaXplZENvbnRlbnQudWsucHJvZmlsZTtcbmV4cG9ydCBjb25zdCBza2lsbEdyb3VwcyA9IGxvY2FsaXplZENvbnRlbnQudWsuc2tpbGxHcm91cHM7XG5leHBvcnQgY29uc3QgcHJvamVjdHMgPSBsb2NhbGl6ZWRDb250ZW50LnVrLnByb2plY3RzO1xuZXhwb3J0IGNvbnN0IGV4cGVyaWVuY2UgPSBsb2NhbGl6ZWRDb250ZW50LnVrLmV4cGVyaWVuY2U7XG4iXSwibWFwcGluZ3MiOiJBQVNBLE1BQU0sZ0JBQWdCO0FBQUEsRUFDcEIsTUFBTTtBQUFBLEVBQ04sT0FBTztBQUFBLEVBQ1AsT0FBTztBQUFBLEVBQ1AsVUFBVTtBQUFBLEVBQ1YsUUFBUTtBQUFBLEVBQ1IsVUFBVTtBQUFBLEVBQ1YsV0FBVztBQUNiO0FBRUEsTUFBTSxlQUFlO0FBQUEsRUFDbkI7QUFBQSxFQUNBO0FBQUEsRUFDQTtBQUFBLEVBQ0E7QUFBQSxFQUNBO0FBQUEsRUFDQTtBQUFBLEVBQ0E7QUFBQSxFQUNBO0FBQUEsRUFDQTtBQUFBLEVBQ0E7QUFBQSxFQUNBO0FBQUEsRUFDQTtBQUFBLEVBQ0E7QUFBQSxFQUNBO0FB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

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: theme("fontFamily.body");
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: theme("colors.accentDim");
+    color: theme("colors.ink");
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid theme("colors.accent");
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .section {
+    @apply mx-auto w-full max-w-5xl px-6 py-20 sm:px-10;
+    box-sizing: border-box;
+    max-width: min(100%, 64rem);
+  }
+
+  .section-label {
+    @apply font-mono text-sm text-muted;
+  }
+}
